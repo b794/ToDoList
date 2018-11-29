@@ -1,0 +1,34 @@
+body{
+  margin: 0px;
+  background-color: #eee8e8;
+}
+
+.top{
+  background-color: #292121;
+  color: #eee8e8 ;
+
+}
+
+h1{
+  font-size: 46px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.checkbox{
+  display: none;
+  float: right;
+}
+
+#add{
+
+}
+
+#tasks{
+  decoration: none; 
+}
+
+#addNew{
+
+  display: none;
+}
