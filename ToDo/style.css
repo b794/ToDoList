@@ -1,4 +1,5 @@
 body{
+
   margin: 0px;
   background-color: #eee8e8;
 }
@@ -9,26 +10,74 @@ body{
 
 }
 
+
 h1{
   font-size: 46px;
   margin-top: 0px;
   text-align: center;
 }
 
-.checkbox{
-  display: none;
-  float: right;
-}
+h2{
+  color:  #292121;
+  text-align: center;
+  font-size: 28px;
 
+}
 #add{
 
 }
 
-#tasks{
-  decoration: none; 
+
+
+.tasks{
+  width: 50%;
+  float: right;
 }
 
-#addNew{
+.addNew{
+  width: 50%;
+  float: left;
+}
 
-  display: none;
+input{
+  margin-left: 25px;
+  background-color: #f9f5f5;
+  border: 1px solid inherit;
+  border-radius: 5px;
+}
+
+p{
+  margin: 5px auto 5px 25px;
+  font-size: 20px;
+  color:  #292121;
+}
+
+#addTask{
+  margin-top: 10px;
+  width: 75px;
+  height: 35px;
+  font-size: 24px;
+  color:  #292121;
+}
+
+ul{
+  decoration: none;
+  padding:0px;
+  display:none;
+  border-bottom: solid  1px black;
+  border-radius: 5px;
+  margin: 20px;
+  width: 500px;
+  float: right;
+}
+
+li{
+  list-style-type:none;
+  border-top:  1px solid black;
+  border-left:  1px solid black;
+  border-right:  1px solid black;
+  border-radius: 5px;
+  background-color: #f9f5f5;
+  text-align: center;
+  font-size: 18px;
 }
