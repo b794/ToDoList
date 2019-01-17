@@ -1,20 +1,35 @@
 var tasks = [];
+var close = document.getElementsByClassName('list');
+  for (var i = 0; i < close.length; i++) {
+    close[i].onclick = function(){
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
 
 document.getElementById("add").onclick = function(){
-  if(document.getElementById('newtask').value == "")
+  if(document.getElementById('newtask').value == "" || document.getElementById('time').value =="")
   {
-    var x = document.createElement("p");
-    x.id = "warning";
-    var y = document.createTextNode("Please add your task");
-    x.appendChild(y);
-    document.body.appendChild(x);
+    alert('You must write something!')
+
   }
   else {
-    tasks.push(document.getElementById('newtask').value);
+    tasks.push(document.getElementById('newtask').value+ " " + document.getElementById('time').value );
     var a = document.createElement("li");
     var b = document.createTextNode(document.getElementById('newtask').value);
     a.appendChild(b);
     document.body.appendChild(a);
-    document.getElementById('warning').style.display = "none";
+    var span = document.createElement("span");
+    var txt = document.createTextNode( document.getElementById('time').value);
+    span.appendChild(txt);
+    a.appendChild(span);
+    document.getElementById('newtask').value ="";
+    document.getElementById('time').value = "";
+    a.className = "list";
+    for (var i = 0; i < close.length; i++) {
+      close[i].onclick = function(){
+        var div = this;
+        div.style.display = "none";
+      }
     }
-}
+}}

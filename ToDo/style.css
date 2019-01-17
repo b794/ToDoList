@@ -15,24 +15,34 @@ h1{
 
 .main{
   margin-left: 20px;
+  margin-bottom: 45px;
 }
 #newtask{
   width: 250px;
+  height: 18px;
 }
-
-p{
-  margin-left: 20px;
-  width: 300px;
-  height: 30px;
-  text-align: center;
-  padding-top: 7px;
-  background-color:#ce4f4f;
-  color: white;
-  font-size: 20px;
+#add{
+  height: 24px;
+}
+input{
+  display: block;
+  float: left;
 }
 
 li{
   list-style: none;
   margin-left: 20px;
-  margin-top: 10px;
+  width: 350px;
+  text-align: justify;
+  background-color:#d2c191;
+  height: 20px;
+  border: 1px black inset;
+}
+
+li:hover{
+  background-color: white;
+}
+span{
+  position: absolute;
+  left: 330px;
 }
