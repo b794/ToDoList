@@ -1,11 +1,5 @@
 var tasks = [];
 var close = document.getElementsByClassName('list');
-  for (var i = 0; i < close.length; i++) {
-    close[i].onclick = function(){
-      var div = this.parentElement;
-      div.style.display = "none";
-    }
-  }
 
 document.getElementById("add").onclick = function(){
   if(document.getElementById('newtask').value == "" || document.getElementById('time').value =="")
@@ -28,8 +22,8 @@ document.getElementById("add").onclick = function(){
     a.className = "list";
     for (var i = 0; i < close.length; i++) {
       close[i].onclick = function(){
-        var div = this;
-        div.style.display = "none";
+        var li = this;
+        li.style.display = "none";
       }
     }
 }}
